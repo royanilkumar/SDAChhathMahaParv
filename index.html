@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chhath Puja – Our Society</title>
+<style>
+:root{--bg:#fff8ee;--card:#ffffff;--text:#3b2412;--muted:#7a5c43;--accent:#d9480f;--accent2:#f59f00;--line:#f0dcc0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d130c;--card:#2a1c12;--text:#fbeedd;--muted:#c9a98a;--accent:#ff8f4d;--accent2:#ffc53d;--line:#4a3320;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1d130c;--card:#2a1c12;--text:#fbeedd;--muted:#c9a98a;--accent:#ff8f4d;--accent2:#ffc53d;--line:#4a3320;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+.hero{text-align:center;padding:56px 20px 44px;background:linear-gradient(180deg,var(--accent2) 0%,var(--accent) 100%);color:#fff}
+.hero .sun{font-size:56px}
+.hero h1{margin:8px 0 4px;font-size:clamp(28px,6vw,46px)}
+.hero p{margin:4px auto;max-width:560px;opacity:.95}
+.btn{display:inline-block;margin-top:18px;padding:12px 26px;background:#fff;color:#b23c0a;border-radius:999px;text-decoration:none;font-weight:600}
+main{max-width:900px;margin:0 auto;padding:28px 18px 50px}
+h2{color:var(--accent);margin:36px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.card b{color:var(--accent);display:block;margin-bottom:4px}
+.card small{color:var(--muted)}
+ul{padding-left:20px}
+.note{color:var(--muted);font-size:14px}
+footer{text-align:center;padding:22px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="sun">🌅</div>
+  <h1>Chhath Puja Mahotsav</h1>
+  <p>Celebrated with devotion by the families of <span id="soc">[Your Society Name]</span></p>
+  <p><strong>[Year] · [Ghat / Venue Name]</strong></p>
+  <a class="btn" href="#schedule">View Schedule</a>
+</header>
+
+<main>
+  <section>
+    <h2>About</h2>
+    <p>Chhath Puja is a four-day festival dedicated to Surya Dev and Chhathi Maiya, observed with fasting, purity and gratitude. Every year our society comes together to celebrate it as one family. Everyone is welcome to join, help and receive prasad.</p>
+  </section>
+
+  <section id="schedule">
+    <h2>Four-Day Schedule</h2>
+    <div class="grid">
+      <div class="card"><b>Day 1 · Nahay Khay</b><small>[Date]</small><p>Holy bath and a simple sattvik meal of lauki-bhaat and chana dal.</p></div>
+      <div class="card"><b>Day 2 · Kharna</b><small>[Date]</small><p>Day-long fast, broken after sunset with kheer-roti prasad. Nirjala fast begins.</p></div>
+      <div class="card"><b>Day 3 · Sandhya Arghya</b><small>[Date] · Sunset about [Time]</small><p>Evening offering to the setting sun at the ghat with the whole society.</p></div>
+      <div class="card"><b>Day 4 · Usha Arghya</b><small>[Date] · Sunrise about [Time]</small><p>Morning offering to the rising sun, followed by parana and prasad distribution.</p></div>
+    </div>
+    <p class="note">Edit the dates and times above once the panchang dates are confirmed.</p>
+  </section>
+
+  <section>
+    <h2>Venue</h2>
+    <div class="card">
+      <b>[Ghat / Society Clubhouse / Temporary Kund]</b>
+      <p>[Full address or landmark]. <a href="https://maps.google.com" target="_blank" rel="noopener">Open in Maps</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Guidelines</h2>
+    <ul>
+      <li>Please keep the ghat and surroundings clean and plastic-free.</li>
+      <li>Vrati families are requested to arrive 30 minutes before arghya time.</li>
+      <li>Prasad is strictly sattvik: no onion, garlic or non-veg anywhere near the puja area.</li>
+      <li>Please keep footwear outside the puja area.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Volunteer and Contribute</h2>
+    <p>Help with decoration, prasad packing, sound and lights, or cleanliness. Contact the committee:</p>
+    <div class="grid">
+      <div class="card"><b>[Name], Secretary</b><a href="tel:+910000000000">+91 00000 00000</a></div>
+      <div class="card"><b>[Name], Treasurer</b><a href="tel:+910000000000">+91 00000 00000</a></div>
+      <div class="card"><b>Society WhatsApp Group</b><a href="https://wa.me/910000000000" target="_blank" rel="noopener">Message us</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  🙏 Chhathi Maiya ki Jai · Jai Surya Dev 🙏<br>
+  © <span id="yr"></span> [Your Society Name]
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
